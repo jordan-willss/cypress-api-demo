@@ -1,5 +1,18 @@
 ///<reference types="cypress" />
 
+/**
+ * This page is just a map of all of the elements, there
+ * are many ways to map out elements, however, this is the
+ * cleanest way to do so in my opinion as it maintains a
+ * logical hierarchy structure.
+ * 
+ * I can call them like this:
+ * 
+ * indexClickMap.uuid.button();
+ * 
+ * Which will click the appropriate button in Cypress
+ */
+
 export const indexGetMap = {
     uuid: {
         button: () => cy.get('#uuid-button'),
